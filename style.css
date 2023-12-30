@@ -30,6 +30,7 @@ header{
     font-size: 2rem;
     color: azure;
     user-select: none;
+    
 }
 .navigatio a{
     position: relative;
@@ -75,4 +76,146 @@ header{
     background-color: azure;
     color: rgb(38, 37, 37);
 }
+.wrapper{
+    position: relative;
+    width: 400px;
+    height: 440px;
+    background: transparent;
+    border: 2px solid rgb(255,255,255, .5);
+    border-radius: 25px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgb(0, 0, 0,.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: -100px;
+}
+.wrapper .form-box{
+    width: 100%;
+    padding: 40px;
+}
+.form-box h2 {
+    font-size: 2em;
+    color: black;
+    text-align: center;
+    position: relative;
+    top: -50px;
+}
+.input-box {
+    position: relative;
+    margin-bottom: 28px;
+}
+
+.input-box input {
+    width: 100%;
+    padding: 10px 10px 10px 40px;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    outline: none;
+    color: #c9cfd4;
+}
+
+.input-box::before,
+.input-box::after {
+    content: '';
+    position: absolute;
+    bottom: 0px;
+    width: 50%;
+    height: 1px;
+    background-color: #ccc;
+    transition: all 0.3s ease;
+}
+
+.input-box::before {
+    left: 0;
+}
+
+.input-box::after {
+    right: 0;
+}
+
+.input-box input:focus::before,
+.input-box input:focus::after,
+.input-box input:valid::before,
+.input-box input:valid::after {
+    width: 30%; 
+    background-color: blue;
+}
+
+.input-box .icon {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    color: #b3c1cc;
+}
+
+.input-box label {
+    position: absolute;
+    top: 50%;
+    left: 45px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    color: #b2c3d2;
+    font-weight: 500;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+.input-box input:focus + label,
+.input-box input:valid + label {
+    top: -20px; 
+    left: 10px;
+    font-size: 0.8em;
+    color: #b0c0c7;
+}
+.remember-forgot{
+   font-size: .9em;
+   color: aliceblue;
+   font-weight: 500;
+   margin: -15px 0 15px;
+   display: flex;
+   justify-content: space-between;
+}
+.remember-forgot label input{
+    accent-color: rgb(37, 39, 41);
+    margin-right: 3px;
+}
+.remember-forgot a{
+    color: aqua;
+    text-decoration: none;
+}
+.remember-forgot a:hover{
+    text-decoration: underline;
+}
+.btn{
+    width: 100%;
+    height: 45px;
+    background: #0f3141;
+    border:none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1em;
+    color: aliceblue;
+    font-weight: bold;
+}
+.login-register{
+    font-size: .9em;
+    color: rgb(229, 235, 235);
+    text-align: center;
+    font-weight: 600;
+    margin: 25px 0 10px;
+}
+.login-register p a{
+    color: aqua;
+    text-decoration: none;
+    font-weight: 600;
+}
+.login-register p a:hover{
+    text-decoration: underline;
+}
+
+
+
 
