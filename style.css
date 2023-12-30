@@ -1,0 +1,22 @@
+ @import url('https://fonts.googleapis.com/css2?family=Rubik+Broken+Fax&family=Rubik+Doodle+Shadow&display=swap');
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Rubik Doodle Shandow' , sans-serif;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0%;
+    width: 100%;
+    padding: 20px 100px;
+    background-color: aqua;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
