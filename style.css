@@ -7,6 +7,13 @@
 
 body{
     font-family: 'Rubik Doodle Shandow' , sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url(./background/tree-736885_1920.jpg)no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 header{
     position: fixed;
@@ -14,9 +21,58 @@ header{
     left: 0%;
     width: 100%;
     padding: 20px 100px;
-    background-color: aqua;
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 99;
 }
+.logo{
+    font-size: 2rem;
+    color: azure;
+    user-select: none;
+}
+.navigatio a{
+    position: relative;
+    font-size: 1.1rem;
+    color: azure;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+}
+.navigatio a::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background-color: azure;
+    border-radius: 8px;
+    transform: scaleX(0);
+    transition: transform .5s;
+}
+.navigatio a:hover::after{
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+.navigatio .botao{
+    width: 120px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #fff;
+    outline: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.2em;
+    color: #fff;
+    font-weight: 500;
+    margin-left: 40px;
+    transition: 0.5s;
+    font-weight: bold;
+}
+.navigatio .botao:hover{
+    background-color: azure;
+    color: rgb(38, 37, 37);
+}
+
