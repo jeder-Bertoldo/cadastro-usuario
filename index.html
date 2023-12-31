@@ -15,7 +15,7 @@
         <a href="#">About</a>
         <a href="#">Services</a>
         <a href="#">contact</a>
-        <button class="botao">login</button>
+        <button class="botao" id="btnPopup">login</button>
     </nav>
 
 </header>
@@ -44,6 +44,35 @@
             <button type="submit" class="btn">Login</button>
             <div class="login-register">
                 <p>Don't have account? <a href="#" class="register-link">Register</a></p>
+            </div>
+        </form>
+    </div>
+
+    <div class="form-box register">
+        <h2>Registrar</h2>
+        <form action="#">
+            <div class="input-box">
+                <span class="icon"><ion-icon name="person"></ion-icon></span>
+                <input type="text" required>
+                <label>Usuario</label>
+            </div>
+            <div class="input-box">
+                <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                <input type="text" required>
+                <label>Email</label>
+            </div>
+            <div class="input-box">
+                <span class="icon"><ion-icon name="lock-open"></ion-icon></span>
+                <input type="password" required>
+                <label>password</label>
+            </div>
+            <div class="remember-forgot">
+                <label> <input type="checkbox">I agree to the terms & conditions</label>
+               
+            </div>
+            <button type="submit" class="btn">Registrar</button>
+            <div class="login-register">
+                <p>already have account? <a href="#" class="login-link">login</a></p>
             </div>
         </form>
     </div>
