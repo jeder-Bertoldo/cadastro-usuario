@@ -11,7 +11,9 @@ loginLink.addEventListener('click' , ()=>{
     wrapper.classList.remove('active');
 });
 
-
 btnPopup.addEventListener('click', () => {
     wrapper.classList.add('active-btnPopup');
 });
+
+//pegar os dados do usuario
+
