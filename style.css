@@ -90,12 +90,37 @@ header{
     align-items: center;
     top: -100px;
     overflow: hidden;
-   
+    transition: height .5s ease;  
+    transform: scale(0);
+    transition: transform .5s , height .2s ease;
+}
+.wrapper.active-btnPopup{
+    transform: scale(1);
+}
+.wrapper.active{
+    height: 520px;
 }
 .wrapper .form-box{
     width: 100%;
     padding: 40px;
 }
+.wrapper .form-box.login {
+    display: block; /* Exibir por padrão */
+}
+
+.wrapper .form-box.register {
+    display: none; /* Ocultar por padrão */
+}
+
+.wrapper.active .form-box.login {
+    display: none; /* Ocultar quando 'active' */
+}
+
+.wrapper.active .form-box.register {
+    display: block; /* Exibir quando 'active' */
+}
+
+
 .icon-close{
     position: absolute;
     top: 0;
