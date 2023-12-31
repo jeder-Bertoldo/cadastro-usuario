@@ -89,10 +89,26 @@ header{
     justify-content: center;
     align-items: center;
     top: -100px;
+    overflow: hidden;
+   
 }
 .wrapper .form-box{
     width: 100%;
     padding: 40px;
+}
+.icon-close{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 45px;
+    background-color: #0f3141;
+    font-size: 2em;
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-bottom-left-radius: 20px;
 }
 .form-box h2 {
     font-size: 2em;
@@ -177,6 +193,7 @@ header{
    margin: -15px 0 15px;
    display: flex;
    justify-content: space-between;
+   font-weight: bold;
 }
 .remember-forgot label input{
     accent-color: rgb(37, 39, 41);
