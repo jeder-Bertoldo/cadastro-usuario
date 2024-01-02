@@ -3,7 +3,6 @@
 include 'conect.php';
 
 
-
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Recebendo e sanitizando os dados do formulário
     $usuario = $conn->real_escape_string($_POST['usuario']);
