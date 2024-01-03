@@ -15,5 +15,11 @@ btnPopup.addEventListener('click', () => {
     wrapper.classList.add('active-btnPopup');
 });
 
-//pegar os dados do usuario
+// validar email e senha do usuario no front 
+
+
+
+
+
+
 
