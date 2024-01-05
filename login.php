@@ -21,7 +21,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $linha = $resultado->fetch_assoc();
             if (password_verify($senha, $linha['senha'])) {
                 // Senha correta
-                echo "Bem-vindo";
+                header("Location: header.html");
+                exit;
             } else {
                 // Senha incorreta
                 echo "Senha incorreta!";
