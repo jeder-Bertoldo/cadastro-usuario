@@ -1,5 +1,5 @@
 <?php
-include 'conect.php'; // Inclua seu script de conexão ao banco de dados
+require_once 'conect.php'; // Inclua seu script de conexão ao banco de dados
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Obter dados do formulário
