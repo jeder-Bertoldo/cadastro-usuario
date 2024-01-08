@@ -1,6 +1,6 @@
 <?php
 
-include 'conect.php';
+require_once 'conect.php';
 
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
