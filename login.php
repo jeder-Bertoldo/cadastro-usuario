@@ -1,6 +1,6 @@
 <?php
 // Arquivo da conexão
-include 'conect.php';
+require_once 'conect.php';
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Verificar se os campos 'email' e 'senha' foram definidos
