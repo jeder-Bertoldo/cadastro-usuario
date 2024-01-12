@@ -1,6 +1,12 @@
 <?php
+// Iniciar a sessão
+session_start();
+
 // Arquivo da conexão
 require_once 'conect.php';
+// Após validar o login
+// 1 hora
+
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Verificar se os campos 'email' e 'senha' foram definidos
@@ -21,7 +27,19 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $linha = $resultado->fetch_assoc();
             if (password_verify($senha, $linha['senha'])) {
                 // Senha correta
-                header("Location: header.html");
+
+                // Armazenar informações do usuário na sessão
+                $_SESSION['user_id'] = $linha['id'];
+                $_SESSION['logged_in'] = true;
+
+
+                // Depois da validação a sessão inicia usando as chaves start_time, expire_time
+                $_SESSION['start_time'] = time();
+                $_SESSION['expire_time'] = 3600; 
+                // Após validar o login
+              
+                // Redirecionar para a pagina principal do projeto
+                header("Location: header.php");
                 exit;
             } else {
                 // Senha incorreta
