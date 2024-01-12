@@ -1,4 +1,6 @@
 <?php
+
+
 // Configuração da conexão com o banco de dados
 $host = "localhost"; // ou o endereço do seu servidor de banco de dados
 $dbname = "cadastro-user"; // nome do banco de dados
